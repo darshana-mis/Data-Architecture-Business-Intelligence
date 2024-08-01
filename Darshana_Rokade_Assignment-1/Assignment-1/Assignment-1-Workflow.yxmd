@@ -1,0 +1,398 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2023.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>\t</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Air_Traffic_Landings_Statistics_20240521.tsv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Activity Period" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Activity Period Start Date" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Operating Airline" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Operating Airline IATA Code" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Published Airline" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Published Airline IATA Code" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="GEO Summary" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="GEO Region" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Landing Aircraft Type" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Aircraft Body Type" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Aircraft Manufacturer" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Aircraft Model" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Aircraft Version" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Landing Count" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="Total Landed Weight" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="data_as_of" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+            <Field name="data_loaded_at" size="254" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="162" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rokad\AppData\Local\Temp\Engine_10680_efd598862dc28c44bc15966ac04455cd_\Engine_10680_cd989736fed4a9449d1b28629ac0f939~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BasicDataProfile.BasicDataProfile">
+        <Position x="174" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Limit_UniqueCount>10000</Limit_UniqueCount>
+          <Limit_UniqueValuesSize>1000</Limit_UniqueValuesSize>
+          <IsMetric value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBasicDataProfile" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="330" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rokad\AppData\Local\Temp\Engine_10680_efd598862dc28c44bc15966ac04455cd_\Engine_10680_303c6d547727cc47a307c9294709bafb~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="198" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="Activity Period" selected="True" />
+            <Field field="Activity Period Start Date" selected="True" />
+            <Field field="Operating Airline" selected="True" />
+            <Field field="Operating Airline IATA Code" selected="True" />
+            <Field field="Published Airline" selected="True" />
+            <Field field="Published Airline IATA Code" selected="True" />
+            <Field field="GEO Summary" selected="True" />
+            <Field field="GEO Region" selected="True" />
+            <Field field="Landing Aircraft Type" selected="True" />
+            <Field field="Aircraft Body Type" selected="True" />
+            <Field field="Aircraft Manufacturer" selected="True" />
+            <Field field="Aircraft Model" selected="True" />
+            <Field field="Aircraft Version" selected="True" />
+            <Field field="Landing Count" selected="True" />
+            <Field field="Total Landed Weight" selected="True" />
+            <Field field="data_as_of" selected="True" />
+            <Field field="data_loaded_at" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Activity Period" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="Int32" />
+            <Field name="Activity Period Start Date" size="10" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="Operating Airline" size="40" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_String" />
+            <Field name="Operating Airline IATA Code" size="3" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="Published Airline" size="40" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_String" />
+            <Field name="Published Airline IATA Code" size="3" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="GEO Summary" size="13" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="GEO Region" size="19" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_String" />
+            <Field name="Landing Aircraft Type" size="9" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="Aircraft Body Type" size="12" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="Aircraft Manufacturer" size="17" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_String" />
+            <Field name="Aircraft Model" size="9" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="V_String" />
+            <Field name="Aircraft Version" size="6" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="Landing Count" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="Int16" />
+            <Field name="Total Landed Weight" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="Int32" />
+            <Field name="data_as_of" size="22" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+            <Field name="data_loaded_at" size="22" source="File: D:\Darshana\courses\DADABI\Air_Traffic_Landings_Statistics_20240521.tsv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="330" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Operating Airline" selected="True" rename="Operating_Airline" />
+            <SelectField field="Operating Airline IATA Code" selected="True" rename="IATA_Code" />
+            <SelectField field="Landing Count" selected="False" />
+            <SelectField field="Total Landed Weight" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="450" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="DateTimeNow()" field="Created_Date" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Created_Date = DateTimeNow()
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="582" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="GetEnvironmentVariable(&quot;USERNAME&quot;)" field="Created_By" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Created_By = GetEnvironmentVariable("USERNAME")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="750" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\rokad\AppData\Local\Temp\Engine_10680_efd598862dc28c44bc15966ac04455cd_\Engine_10680_a6c4b0e635e3914cacda7a2701f34371~.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="750" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File MaxRecords="" FileFormat="23">aka:DARSHANA\rokad|||SFO_Air_Traffic_Landings_Data</File>
+          <Passwords />
+          <CachedCosmeticName />
+          <Disable>False</Disable>
+          <FormatSpecificOptions>
+            <TransactionMessages>False</TransactionMessages>
+            <Geometry>True</Geometry>
+            <Projection />
+            <IgnoreDropTableSQLErrors>False</IgnoreDropTableSQLErrors>
+            <SpatialObjSize>8000</SpatialObjSize>
+            <OutputOption>Create</OutputOption>
+            <PostSQL />
+            <TransactionSize>10000</TransactionSize>
+            <TableStyle>Quoted</TableStyle>
+            <PreSQL />
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>aka:DARSHANA\rokad
+Query=SFO_Air_Traffic_Landings_Dat...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Assignment-1-Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="e676fed1-496e-4fda-8710-59cb74c347b4" />
+      <Telemetry>
+        <PreviousWorkflowId value="d8fc3601-c7d4-4a9a-976e-c4c70e4fb71c" />
+        <OriginWorkflowId value="d8fc3601-c7d4-4a9a-976e-c4c70e4fb71c" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
