@@ -1,0 +1,1 @@
+This repository contains files and resources related to the course Designing Advanced Data Architectures for Business Intelligence. The course focuses on advanced techniques in designing, implementing, and optimizing data architectures for BI applications.
